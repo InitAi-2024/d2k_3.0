@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Laptop, Gift } from 'lucide-react';
+import { Brain, Laptop, Gift, Cpu } from 'lucide-react';
 
 const Tracks: React.FC = () => {
   return (
@@ -8,36 +8,39 @@ const Tracks: React.FC = () => {
         <h2 className="text-4xl font-bold mb-16 text-center matrix-glow">
           Hack Tracks
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {[
             {
               icon: <Brain className="w-16 h-16 mb-6" />,
-              title: "AI Revolution",
+              title: "NLP",
               description:
-                "Build the next generation of AI-powered applications that push the boundaries of what's possible.",
+                "Create intelligent applications that understand and process human language.",
               items: [
-                "Machine Learning",
-                "Natural Language Processing",
-                "Computer Vision",
+                "Sentiment Analysis",
+                "Chatbots",
+                "Text Classification",
               ],
             },
             {
               icon: <Laptop className="w-16 h-16 mb-6" />,
-              title: "Web3 & Blockchain",
+              title: "Gen AI",
               description:
-                "Create decentralized applications that challenge the status quo of the digital world.",
-              items: ["Smart Contracts", "DeFi Solutions", "NFT Platforms"],
+                "Explore the capabilities of Generative AI to create innovative and creative solutions.",
+              items: ["Text Generation", "Image Synthesis", "Chatbots"],
             },
             {
               icon: <Gift className="w-16 h-16 mb-6" />,
-              title: "Open Innovation",
+              title: "Computer Vision",
               description:
-                "Build anything that breaks free from the constraints of the matrix.",
-              items: [
-                "Social Impact",
-                "Developer Tools",
-                "Creative Technology",
-              ],
+                "Develop systems that analyze and understand visual data.",
+              items: ["Image Recognition", "Object Detection", "Face Recognition"],
+            },
+            {
+              icon: <Cpu className="w-16 h-16 mb-6" />,
+              title: "Machine Learning",
+              description:
+                "Train models to uncover patterns and make predictions from data.",
+              items: ["Regression Models", "Classification", "Clustering"],
             },
           ].map((track, index) => (
             <div
@@ -66,4 +69,4 @@ const Tracks: React.FC = () => {
   );
 };
 
-export default Tracks; 
+export default Tracks;
