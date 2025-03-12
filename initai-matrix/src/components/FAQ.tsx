@@ -25,10 +25,10 @@ const FAQ: React.FC = () => {
       question: "Is there a registration fee?",
       answer: "No, participation is completely free! We believe in making technology accessible to everyone."
     },
-    {
-      question: "Will there be prizes?",
-      answer: "Yes! We have a total prize pool of ₹80,000 distributed across various categories and special awards."
-    },
+    // {
+    //   question: "Will there be prizes?",
+    //   answer: "Yes! We have a total prize pool of ₹80,000 distributed across various categories and special awards."
+    // },
     // {
     //   question: "What if I don't know how to code?",
     //   answer: "That's okay! We welcome participants of all skill levels. We'll have workshops and mentors to help you get started."
