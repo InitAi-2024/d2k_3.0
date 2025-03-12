@@ -3,44 +3,49 @@ import React from 'react';
 const Timeline: React.FC = () => {
   const timelineItems = [
     {
-      time: "Day 1 - 9:00 AM",
+      time: "Day 1 - 8:00 AM",
       title: "Registration & Check-in",
       description: "Get your badges and swag"
     },
     {
-      time: "Day 1 - 10:00 AM",
+      time: "Day 1 - 8.30 AM",
       title: "Opening Ceremony",
       description: "Welcome address and keynote speakers"
     },
     {
-      time: "Day 1 - 11:00 AM",
+      time: "Day 1 - 9:00 AM",
       title: "Hacking Begins",
       description: "Start your engines!"
     },
     {
-      time: "Day 1 - 2:00 PM",
-      title: "Workshop Session 1",
-      description: "AI & Machine Learning Fundamentals"
+      time: "Day 1 - 1:00 PM",
+      title: "Lunch Break",
+      description: "Recharge and refuel"
     },
     {
-      time: "Day 2 - 10:00 AM",
-      title: "Workshop Session 2",
-      description: "Web3 Development"
+      time: "Day 1 - 6:00 PM",
+      title: "Project Submission",
+      description: "Submit your projects for judging"
     },
     {
-      time: "Day 2 - 3:00 PM",
-      title: "Project Submissions",
-      description: "Submit your hacks"
+      time: "Day 1 - 6:30 PM",
+      title: "First Judging Round",
+      description: "Judges will review your projects"
     },
     {
-      time: "Day 2 - 4:00 PM",
-      title: "Judging",
-      description: "Present your projects"
+      time: "Day 1 - 7:30 PM",
+      title: "Final Round",
+      description: "Top teams present their projects"
     },
     {
-      time: "Day 2 - 6:00 PM",
+      time: "Day 1 - 9:00 PM",
+      title: "Prize Distribution",
+      description: "Announce winners and distribute prizes"
+    },
+    {
+      time: "Day 1 - 9:30 PM",
       title: "Closing Ceremony",
-      description: "Awards and celebrations"
+      description: "Thank you and goodbye!"
     }
   ];
 
