@@ -27,7 +27,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Will there be prizes?",
-      answer: "Yes! We have a total prize pool of ₹100,000 distributed across various categories and special awards."
+      answer: "Yes! We have a total prize pool of ₹80,000 distributed across various categories and special awards."
     },
     // {
     //   question: "What if I don't know how to code?",

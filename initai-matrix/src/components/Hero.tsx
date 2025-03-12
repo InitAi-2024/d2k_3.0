@@ -96,7 +96,7 @@ const Hero: React.FC = () => {
             {/* Prize Card */}
             <div className="flex flex-col items-center p-5 rounded-2xl backdrop-blur-sm bg-black/30 border border-green-400/20 hover:border-green-400/50 transition-all hover:transform hover:scale-105 duration-300">
               <Trophy className="w-10 h-10 text-green-400 mb-3" />
-              <h3 className="text-xl font-bold text-green-300">₹1,00,000</h3>
+              <h3 className="text-xl font-bold text-green-300">₹80,000</h3>
               <p className="text-sm text-green-300/80">in total cash prizes</p>
             </div>
 
