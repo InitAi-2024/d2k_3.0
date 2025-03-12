@@ -6,8 +6,8 @@ const FAQ: React.FC = () => {
   
   const faqItems = [
     {
-      question: "What is D2K Hack?",
-      answer: "D2K Hack is a 48-hour hackathon focused on AI, machine learning, and cutting-edge technology. It brings together developers, designers, and innovators to create groundbreaking solutions."
+      question: "What is D2K 3.0 Hack?",
+      answer: "D2K 3.0 Hack is a 9-hour hackathon focused on AI, machine learning, and cutting-edge technology. It brings together developers, designers, and innovators to create groundbreaking solutions."
     },
     {
       question: "Who can participate?",
@@ -15,7 +15,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Do I need a team?",
-      answer: "You can participate solo or in a team of up to 4 people. We'll also have team formation events if you're looking to join one!"
+      answer: "You can participate solo or in a team of up to 3 people. We'll also have team formation events if you're looking to join one!"
     },
     {
       question: "What should I bring?",
@@ -27,16 +27,16 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Will there be prizes?",
-      answer: "Yes! We have a total prize pool of $50,000 distributed across various categories and special awards."
+      answer: "Yes! We have a total prize pool of ₹100,000 distributed across various categories and special awards."
     },
-    {
-      question: "What if I don't know how to code?",
-      answer: "That's okay! We welcome participants of all skill levels. We'll have workshops and mentors to help you get started."
-    },
-    {
-      question: "Can I start working on my project before the event?",
-      answer: "No, all projects must be started during the hackathon. You can brainstorm ideas beforehand, but coding and design must begin at the event."
-    }
+    // {
+    //   question: "What if I don't know how to code?",
+    //   answer: "That's okay! We welcome participants of all skill levels. We'll have workshops and mentors to help you get started."
+    // }
+    // {
+    //   question: "Can I start working on my project before the event?",
+    //   answer: "No, all projects must be started during the hackathon. You can brainstorm ideas beforehand, but coding and design must begin at the event."
+    // }
   ];
 
   const toggleItem = (index: number) => {
@@ -62,7 +62,7 @@ const FAQ: React.FC = () => {
             </button>
             <div 
               className={`overflow-hidden transition-all duration-300 ${
-                openItem === index ? 'max-h-96 p-6 pt-0' : 'max-h-0'
+                openItem === index ? 'max-h-96 p-6 pt-2' : 'max-h-0'
               }`}
             >
               <p className="text-green-300">{item.answer}</p>
