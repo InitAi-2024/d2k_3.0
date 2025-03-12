@@ -3,7 +3,7 @@ import { Calendar, Trophy, Users } from 'lucide-react';
 
 const Hero: React.FC = () => {
   // Text for the animated heading
-  const mainHeadingLine1 = "Welcome to the";
+  const mainHeadingLine1 = "Welcome to The";
   const mainHeadingLine2 = "Future of AI";
 
   return (

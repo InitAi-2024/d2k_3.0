@@ -1,5 +1,3 @@
-import React from "react";
-
 // Sponsor data
 const sponsors = {
   titleSponsor: {
@@ -11,10 +9,17 @@ const sponsors = {
   },
   associateSponsors: [
     {
-      tier: "Associate Partner",
-      name: "Associate Partner",
+      tier: "Associate Sponsorship",
+      name: "Associate Sponsorship",
       image:
         "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741697474/init-ai/denbxmd0nvtvfx4gaagr.png",
+      link: "https://www.google.com",
+    },
+    {
+      tier: "Powered By",
+      name: "Powered By",
+      image:
+        "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741697571/init-ai/mck4ih9peqi3p0hya8gk.png",
       link: "https://www.google.com",
     },
     {
@@ -76,10 +81,10 @@ const SponsorsContent: React.FC = () => {
         <h3 className="text-3xl font-bold text-green-400 text-center matrix-glow">
           Associate Sponsors
         </h3>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-3 gap-10">
           {sponsors.associateSponsors.map((sponsor) => (
             <div key={sponsor.name} className="max-w-[320px] mx-auto">
-              <h4 className="text-base font-bold text-green-300 text-center matrix-glow">
+              <h4 className="text-xl font-bold text-green-300 text-center matrix-glow">
                 {sponsor.tier}
               </h4>
               <a
@@ -106,12 +111,12 @@ const SponsorsContent: React.FC = () => {
       {/* Gold and Silver Sponsors */}
       <div className="space-y-6">
         <h3 className="text-3xl font-bold text-green-400 text-center matrix-glow">
-          Partners & Supporters
+          Sponsors
         </h3>
         <div className="grid grid-cols-2 gap-10">
           {sponsors.otherSponsors.map((sponsor) => (
             <div key={sponsor.name} className="max-w-[320px] mx-auto">
-              <h4 className="text-base font-bold text-green-300 text-center matrix-glow">
+              <h4 className="text-xl font-bold text-green-300 text-center matrix-glow">
                 {sponsor.tier}
               </h4>
               <a
