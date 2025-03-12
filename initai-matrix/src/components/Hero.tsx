@@ -1,5 +1,5 @@
-import React from 'react';
-import { Calendar, Trophy, Users } from 'lucide-react';
+import React from "react";
+import { Calendar, Trophy, Users } from "lucide-react";
 
 const Hero: React.FC = () => {
   // Text for the animated heading
@@ -17,35 +17,36 @@ const Hero: React.FC = () => {
           {/* Main heading */}
           <h1 className="text-[clamp(2rem,5vw,4.5rem)] font-bold mb-4 tracking-tight leading-tight break-words">
             <div className="glowing-text-container">
-              {mainHeadingLine1.split('').map((letter, index) => (
-                <span 
-                  key={`line1-${index}`} 
+              {mainHeadingLine1.split("").map((letter, index) => (
+                <span
+                  key={`line1-${index}`}
                   className="text-green-400 inline-block letter-glow"
-                  style={{ 
+                  style={{
                     animationDelay: `${index * 0.1}s`,
                   }}
                 >
-                  {letter === ' ' ? '\u00A0' : letter}
+                  {letter === " " ? "\u00A0" : letter}
                 </span>
               ))}
             </div>
             <div className="glowing-text-container mt-2">
-              {mainHeadingLine2.split('').map((letter, index) => (
-                <span 
-                  key={`line2-${index}`} 
+              {mainHeadingLine2.split("").map((letter, index) => (
+                <span
+                  key={`line2-${index}`}
                   className="text-green-300 inline-block letter-glow"
-                  style={{ 
-                    animationDelay: `${(mainHeadingLine1.length + index) * 0.1}s`,
+                  style={{
+                    animationDelay: `${
+                      (mainHeadingLine1.length + index) * 0.1
+                    }s`,
                   }}
                 >
-                  {letter === ' ' ? '\u00A0' : letter}
+                  {letter === " " ? "\u00A0" : letter}
                 </span>
               ))}
             </div>
           </h1>
 
-          {/* Subheading */}
-          <h2 className="text-[clamp(1rem,2.5vw,2rem)] mb-8 animate-typewriter max-w-[90%] mx-auto text-green-300/90 font-light break-words">
+          <h2 className="text-[clamp(1.25rem,4vw,2rem)] mb-8 animate-typewriter w-full mx-auto text-green-300/90 font-light break-words">
             Where Innovation Meets Intelligence
           </h2>
 
