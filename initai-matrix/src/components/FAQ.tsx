@@ -15,7 +15,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Do I need a team?",
-      answer: "You can participate solo or in a team of up to 3 people. We'll also have team formation events if you're looking to join one!"
+      answer: "You can participate in a team of minimum 2 or up to 3 people. We'll also have team formation events if you're looking to join one!"
     },
     {
       question: "What should I bring?",
