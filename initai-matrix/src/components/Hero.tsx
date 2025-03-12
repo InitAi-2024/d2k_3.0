@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
             </div>
           </h1>
 
-          <h2 className="text-[clamp(1.25rem,4vw,2rem)] mb-8 animate-typewriter w-full mx-auto text-green-300/90 font-light break-words">
+          <h2 className="text-[clamp(1rem, 4vw, 1.75rem)] mb-8 animate-typewriter max-w-full mx-auto text-green-300/90 font-light overflow-hidden break-words">
             Where Innovation Meets Intelligence
           </h2>
 
