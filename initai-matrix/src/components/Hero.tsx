@@ -68,7 +68,12 @@ const Hero: React.FC = () => {
             className="flex flex-wrap justify-center gap-4 animate-fade-in"
             style={{ animationDelay: "0.5s" }}
           >
-            <button className="cta-button group bg-green-500 hover:bg-green-600 text-black px-6 sm:px-10 py-3 sm:py-5 rounded-xl text-lg sm:text-xl font-bold transition-all transform hover:scale-105 animate-glow flex items-center justify-center gap-2 shadow-lg shadow-green-500/20">
+            <button
+              onClick={() =>
+                window.open("https://data2knowledge.devfolio.co/", "_blank")
+              }
+              className="cta-button group bg-green-500 hover:bg-green-600 text-black px-6 sm:px-10 py-3 sm:py-5 rounded-xl text-lg sm:text-xl font-bold transition-all transform hover:scale-105 animate-glow flex items-center justify-center gap-2 shadow-lg shadow-green-500/20"
+            >
               Register Now
               <span className="group-hover:translate-x-1 transition-transform">
                 →
