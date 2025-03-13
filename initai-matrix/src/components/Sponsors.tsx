@@ -6,7 +6,7 @@ const sponsors = {
     name: "Title Sponsor",
     image:
       "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741716856/init-ai/p2x8uaez5epvccxhtnmh.png",
-    link: "https://www.google.com",
+    link: "https://punctualiti.com/",
   },
   associateSponsors: [
     {
@@ -14,21 +14,21 @@ const sponsors = {
       name: "Associate Sponsorship",
       image:
         "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741697474/init-ai/denbxmd0nvtvfx4gaagr.png",
-      link: "https://www.google.com",
+      link: "https://www.solunation.com/",
     },
     {
       tier: "Powered By",
       name: "Powered By",
       image:
         "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741697571/init-ai/mck4ih9peqi3p0hya8gk.png",
-      link: "https://www.google.com",
+      link: "https://www.antennae.in",
     },
     {
       tier: "Associate Sponsorship",
       name: "Associate Sponsorship",
       image:
         "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741697035/init-ai/f9zrcgdiozww4cngxnn9.png",
-      link: "https://www.google.com",
+      link: "https://www.hexamad.in/",
     },
   ],
   otherSponsors: [
@@ -37,14 +37,14 @@ const sponsors = {
       name: "Gold Sponsor",
       image:
         "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741717108/init-ai/jkpw3yiz7e4216tvafrn.png",
-      link: "https://www.google.com",
+      link: "https://devfolio.co/",
     },
     {
       tier: "Silver Partner",
       name: "Silver Sponsor",
       image:
         "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741697193/init-ai/mwc9icnmny4xtmvkfxzc.png",
-      link: "https://www.google.com",
+      link: "https://ethindia2024.devfolio.co/",
     },
   ],
 };
