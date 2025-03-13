@@ -3,51 +3,72 @@ import React from 'react';
 const Timeline: React.FC = () => {
   const timelineItems = [
     {
-      time: "Day 1 - 8:00 AM",
-      title: "Registration & Check-in",
-      description: "Get your badges and swag"
+      time: "Two Days Before the Event",
+      title: "Problem Statement Reveal",
+      description: "A major portion of the problem statement will be revealed, allowing participants to start coding during this timeframe. The remaining part of the problem statement will be unveiled on the day of the event."
     },
     {
-      time: "Day 1 - 8.30 AM",
-      title: "Opening Ceremony",
-      description: "Welcome address and keynote speakers"
+      time: "Day 1 - 7:00 AM",
+      title: "Report to College",
+      description: "Participants should report to the venue and complete the check-in process."
+    },
+    {
+      time: "Day 1 - 7:30 AM",
+      title: "Coding Begins",
+      description: "Start working on your projects."
+    },
+    {
+      time: "Day 1 - 8:00 AM",
+      title: "Inauguration Session",
+      description: "Opening ceremony and welcome address."
     },
     {
       time: "Day 1 - 9:00 AM",
-      title: "Hacking Begins",
-      description: "Start your engines!"
+      title: "Inauguration Ends",
+      description: "Official start of the event."
+    },
+    {
+      time: "Day 1 - 10:00 AM",
+      title: "First Mentoring Round",
+      description: "Get valuable insights and guidance from mentors."
     },
     {
       time: "Day 1 - 1:00 PM",
-      title: "Lunch Break",
-      description: "Recharge and refuel"
+      title: "Snacks Break",
+      description: "Take a break and refuel."
     },
     {
-      time: "Day 1 - 6:00 PM",
-      title: "Project Submission",
-      description: "Submit your projects for judging"
+      time: "Day 1 - 4:30 PM",
+      title: "Coding Ends",
+      description: "Final submissions should be ready."
+    },
+    {
+      time: "Day 1 - 4:30 PM to 6:00 PM",
+      title: "First Judging Round",
+      description: "Judges will review and evaluate the submitted projects."
     },
     {
       time: "Day 1 - 6:30 PM",
-      title: "First Judging Round",
-      description: "Judges will review your projects"
+      title: "Results Declaration",
+      description: "Announcement of teams proceeding to the final round."
     },
     {
-      time: "Day 1 - 7:30 PM",
+      time: "Day 1 - 7:00 PM to 9:00 PM",
       title: "Final Round",
-      description: "Top teams present their projects"
+      description: "Top teams will present their projects."
     },
     {
-      time: "Day 1 - 9:00 PM",
-      title: "Prize Distribution",
-      description: "Announce winners and distribute prizes"
+      time: "Day 1 - 9:00 PM to 9:30 PM",
+      title: "Final Results Declaration",
+      description: "Announcement of winners and prize distribution."
     },
     {
       time: "Day 1 - 9:30 PM",
       title: "Closing Ceremony",
-      description: "Thank you and goodbye!"
+      description: "Thank you for participating!"
     }
   ];
+  
 
   return (
     <div className="max-w-4xl mx-auto relative">
