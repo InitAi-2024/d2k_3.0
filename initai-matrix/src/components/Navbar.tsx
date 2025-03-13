@@ -12,6 +12,7 @@ const Navbar: React.FC = () => {
     { name: 'Countdown', id: 'countdown' },
     { name: 'Features', id: 'features' },
     { name: 'Tracks', id: 'tracks' },
+    { name: 'Prizes', id: 'prizes' },
     { name: 'Timeline', id: 'timeline' },
     { name: 'Sponsors', id: 'sponsors' },
     { name: 'FAQ', id: 'faq' },

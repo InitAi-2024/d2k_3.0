@@ -3,25 +3,25 @@ import { Trophy, Award, Gift } from "lucide-react";
 const Prizes = () => {
   const prizeCategories = [
     {
-      title: "1st Place",
-      description: "Grand Prize Winner",
-      reward: "$40,000",
-      icon: <Trophy className="w-12 h-12 mb-4 text-yellow-400" />,
-      color: "border-yellow-400",
-      glow: "shadow-yellow-400/20",
-    },
-    {
       title: "2nd Place",
       description: "Runner-up",
-      reward: "$25,000",
+      reward: "₹25,000",
       icon: <Award className="w-12 h-12 mb-4 text-silver-400" />,
       color: "border-gray-400",
       glow: "shadow-gray-400/20",
     },
     {
+      title: "1st Place",
+      description: "Grand Prize Winner",
+      reward: "₹40,000",
+      icon: <Trophy className="w-12 h-12 mb-4 text-yellow-400" />,
+      color: "border-yellow-400",
+      glow: "shadow-yellow-400/20",
+    },
+    {
       title: "3rd Place",
       description: "Second Runner-up",
-      reward: "$15,000",
+      reward: "₹15,000",
       icon: <Gift className="w-12 h-12 mb-4 text-amber-600" />,
       color: "border-amber-600",
       glow: "shadow-amber-600/20",
