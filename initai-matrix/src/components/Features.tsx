@@ -30,7 +30,7 @@ const Features: React.FC = () => {
               icon: (
                 <Zap className="w-12 h-12 mb-6 group-hover:text-black transition-colors" />
               ),
-              title: "To be revealed soon",
+              title: "₹80,000",
               description:
                 "Substantial rewards for those who dare to challenge reality",
             },
