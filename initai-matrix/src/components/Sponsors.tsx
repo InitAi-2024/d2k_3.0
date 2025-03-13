@@ -51,7 +51,7 @@ const sponsors = {
 
 const SponsorsContent: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 space-y-12">
+    <div id="sponsors" className="max-w-7xl mx-auto px-4 space-y-12">
       {/* Title Sponsor */}
       <div className="space-y-6">
         <h3 className="text-3xl font-bold text-green-400 text-center matrix-glow">

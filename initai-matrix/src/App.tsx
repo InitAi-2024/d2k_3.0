@@ -23,6 +23,7 @@ import Sponsors from "./components/Sponsors";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Tracks from "./components/Tracks";
+import Prizes from "./components/Prizes";
 import Footer from "./components/Footer";
 import Location from "./components/Location";
 import useSound from "use-sound";
@@ -153,6 +154,9 @@ function App() {
       <Features />
       {/* Tracks Section */}
       <Tracks />
+
+      {/* Prizes Section */}
+      <Prizes />
 
       {/* Timeline Section */}
       <section id="timeline" className="relative z-10 py-20">
