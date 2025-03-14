@@ -1,62 +1,106 @@
-import { Trophy, Award, Gift } from "lucide-react";
+import React from "react";
 
 const Prizes = () => {
   const prizeCategories = [
     {
-      title: "2nd Place",
-      description: "Runner-up",
-      reward: "₹25,000",
-      icon: <Award className="w-12 h-12 mb-4 text-silver-400" />,
-      color: "border-gray-400",
-      glow: "shadow-gray-400/20",
-    },
-    {
       title: "1st Place",
       description: "Grand Prize Winner",
       reward: "₹40,000",
-      icon: <Trophy className="w-12 h-12 mb-4 text-yellow-400" />,
-      color: "border-yellow-400",
-      glow: "shadow-yellow-400/20",
+      image: "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741972988/init-ai/qzbyubqjulxx1uasjmba.png",
+      size: "w-96 h-96",
+      glow: "shadow-yellow-400/30",
+    },
+    {
+      title: "2nd Place",
+      description: "Runner-up",
+      reward: "₹25,000",
+      image: "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741972988/init-ai/vqno4cfummisqlde5lsd.png",
+      size: "w-72 h-72",
+      glow: "shadow-gray-400/30",
     },
     {
       title: "3rd Place",
       description: "Second Runner-up",
       reward: "₹15,000",
-      icon: <Gift className="w-12 h-12 mb-4 text-amber-600" />,
-      color: "border-amber-600",
-      glow: "shadow-amber-600/20",
+      image: "https://res.cloudinary.com/dk5acaaxg/image/upload/v1741972991/init-ai/ayf4xnb3ol00o6ehpxns.png",
+      size: "w-72 h-72",
+      glow: "shadow-amber-600/30",
     },
   ];
 
   return (
     <section id="prizes" className="relative z-10 py-20 bg-black/80">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center matrix-glow">
-          Exciting Prizes
+        <h2 className="text-5xl font-bold mb-4 text-center matrix-glow">
+          Prize Pool
         </h2>
+        <p className="text-xl text-green-300/80 text-center mb-16">
+          Compete for amazing rewards and recognition
+        </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {prizeCategories.map((prize, index) => (
-            <div
-              key={index}
-              className={`bg-black/60 border ${prize.color} p-6 rounded-lg transition-all duration-300 hover:scale-105 ${prize.glow} hover:shadow-lg`}
-            >
-              <div className="flex flex-col items-center text-center">
-                {prize.icon}
-                <h3 className="text-2xl font-bold mb-2">{prize.title}</h3>
-                <p className="text-gray-400 mb-4">{prize.description}</p>
-                <div className="mt-auto">
-                  <span className="text-xl font-bold matrix-glow">
+        <div className="flex flex-col items-center">
+          {/* First Place - Centered and Larger */}
+          <div className="mb-20 transform hover:scale-105 transition-transform duration-500">
+            <div className="relative">
+              <div className="absolute inset-0 bg-green-400/10 rounded-full blur-2xl group-hover:bg-green-400/20 transition-colors duration-500" />
+              <img
+                src={prizeCategories[0].image}
+                alt={prizeCategories[0].title}
+                className={`${prizeCategories[0].size} object-contain relative z-10`}
+              />
+            </div>
+            <div className="mt-8 text-center">
+              <h3 className="text-4xl font-bold text-green-400 mb-3">
+                {prizeCategories[0].title}
+              </h3>
+              <p className="text-green-300/80 text-xl mb-3">
+                {prizeCategories[0].description}
+              </p>
+              <span className="text-4xl font-bold matrix-glow bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent">
+                {prizeCategories[0].reward}
+              </span>
+            </div>
+          </div>
+
+          {/* Second and Third Place - Side by Side */}
+          <div className="flex justify-center gap-24">
+            {prizeCategories.slice(1).map((prize, index) => (
+              <div key={index} className="transform hover:scale-105 transition-transform duration-500">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-green-400/10 rounded-full blur-2xl group-hover:bg-green-400/20 transition-colors duration-500" />
+                  <img
+                    src={prize.image}
+                    alt={prize.title}
+                    className={`${prize.size} object-contain relative z-10`}
+                  />
+                </div>
+                <div className="mt-8 text-center">
+                  <h3 className="text-3xl font-bold text-green-400 mb-3">
+                    {prize.title}
+                  </h3>
+                  <p className="text-green-300/80 text-lg mb-3">
+                    {prize.description}
+                  </p>
+                  <span className="text-3xl font-bold matrix-glow bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent">
                     {prize.reward}
                   </span>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
+
+      {/* Custom styles for glow effects */}
+      <style>{`
+        .matrix-glow {
+          text-shadow: 0 0 10px rgba(74, 222, 128, 0.3),
+                      0 0 20px rgba(74, 222, 128, 0.2),
+                      0 0 30px rgba(74, 222, 128, 0.1);
+        }
+      `}</style>
     </section>
   );
 };
 
-export default Prizes; 
+export default Prizes;
