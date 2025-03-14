@@ -37,7 +37,7 @@ const Prizes = () => {
         <p className="text-xl text-green-300/80 text-center mb-16">
           Compete for amazing rewards and recognition
         </p>
-        
+
         <div className="flex flex-col items-center">
           {/* First Place - Centered and Larger */}
           <div className="mb-20 transform hover:scale-105 transition-transform duration-500">
@@ -62,16 +62,16 @@ const Prizes = () => {
             </div>
           </div>
 
-          {/* Second and Third Place - Side by Side */}
-          <div className="flex justify-center gap-24">
+          {/* Second and Third Place - Stacked on Mobile */}
+          <div className="flex flex-col md:flex-row gap-12">
             {prizeCategories.slice(1).map((prize, index) => (
-              <div key={index} className="transform hover:scale-105 transition-transform duration-500">
+              <div key={index} className="w-full md:w-auto transform hover:scale-105 transition-transform duration-500">
                 <div className="relative">
                   <div className="absolute inset-0 bg-green-400/10 rounded-full blur-2xl group-hover:bg-green-400/20 transition-colors duration-500" />
                   <img
                     src={prize.image}
                     alt={prize.title}
-                    className={`${prize.size} object-contain relative z-10`}
+                    className={`${prize.size} object-contain relative z-10 mx-auto`}
                   />
                 </div>
                 <div className="mt-8 text-center">
